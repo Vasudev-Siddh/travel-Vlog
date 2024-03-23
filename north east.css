@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.447),rgba(0, 0, 0, 0.638)),url(image/northeast\ bg.webp);
+    background-size: cover;
+    background-position: center;
+}
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position: relative;
+    max-width: 70px;
+}
+header ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 25px;
+    margin-top: -16px;
+    position: relative;
+    letter-spacing: 2px;
+    margin-left: 20px; 
+}
+header ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header ul li::after{
+    content: '';
+    height: 1px;
+    width: 0;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+header ul li:hover::after{
+    width: 100%;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    width: 90vw;
+    margin: 7vw auto;
+}
+.container a{
+    text-decoration: none;
+}
+.card{
+    width: 280px;
+    height: 200px;
+    border-radius: 30px;
+    margin-top: 35px;
+    border: 2px solid #fff;
+    padding-top: 15px;
+    padding-left: 15px;
+    transition: 0.3s;
+}
+.card:hover{
+    transform: scale(1.4);
+}
+#card1{
+    background-image: url(image/park.jpg);
+    background-size:cover;
+    background-position: center;
+
+}
+#card2{
+    background-image: url(image/Meghalaya.jpg);
+    background-size:cover;
+    background-position: center;
+}
+#card3{
+    background-image: url(image/Tawang.webp);
+    background-size:cover;
+    background-position: center;
+}
+#card4{
+    background-image: url(image/Gangtok.jpg);
+    background-size:cover;
+    background-position: center;
+}
+#card5{
+    background-image: url(image/Kohima.jpg);
+    background-size:cover;
+    background-position: center;
+}
+#card6{
+    background-image: url(image/Majuli.jpg);
+    background-size:cover;
+    background-position: center;
+}
+#card7{
+    background-image: url(image/aizawl.jpg);
+    background-size:cover;
+    background-position: center;
+}
+#card8{
+    background-image: url(image/Ziro\ Valley.webp);
+    background-size:cover;
+    background-position: center;
+}
+.container .card h3{
+    color: #000;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 5px;
+}
+.container .card p{
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: small;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: rgba(0, 0, 0, 0.521);
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 15px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelIndia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="video/bg video.mp4" type="video/mp4">
+      </video>
+    <section>
+        <div class="fadebg"></div>
+        <header>
+            <a href="image/Logo.png"><img src="image/Logo.png" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="south india.html">What's New</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="vlogs.html">Destinations</a></li>
+                <!-- <li><a href="https://www.instagram.com/">Contact</a></li> -->
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Discover the Colors of Travel <br>Explore, Experience and Embrace India with <span>TravelIndia!</span></h2>
+                <p>Welcome to TravelIndia, your gateway to a kaleidoscopic journey through
+                    the heart of an incredible nation. Immerse yourself in the rich tapestry of
+                     India's diverse landscapes, vibrant cultures, and timeless traditions.</p>
+                     <a href="south india.html">See More</a> 
+            </div>
+            <div class="imgBox">
+                <img src="image/india map.png" class="mini">
+            </div>
+        </div>
+        <ul class="thumb">
+            <p>Select One From Below</p>
+            <li><a href="north india.html"><img src="image/North mini.png" onmouseenter="imgSlider('image/North.png');changeBgColor('linear-gradient(rgba(94, 55, 18, 0.40),rgba(94, 55, 18, 0.80))')"></a></li>
+            <li><a href="north east.html"><img src="image/Northeast mini.png" onmouseenter="imgSlider('image/Northeast.png');changeBgColor('linear-gradient(rgba(18, 91, 100, 0.40),rgba(18, 65, 94, 0.80))')"></a></li>
+            <li><a href="south india.html"><img src="image/South mini.png" onmouseenter="imgSlider('image/South.png');changeBgColor('linear-gradient(rgba(18, 94, 28, 0.40),rgba(18, 65, 14, 0.80))')"></a></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/"><img src="image/facebook.png"></a></li>
+            <li><a href="https://twitter.com/"><img src="image/twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/"><img src="image/instagram.png"></a></li>
+        </ul>
+    </section>   
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.mini').src = anything;
+        }
+        function changeBgColor(color){
+            const circle = document.querySelector('.fadebg');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
